@@ -3,9 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import MyMap from './components/MyMap';
 
-let map;
-
-
 class App extends React.Component {
   constructor(props) {
     super(props);
