@@ -8,8 +8,8 @@ import {
 
 const MyMap = withScriptjs(withGoogleMap((props) =>
   <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{lat: 42.358169, lng: -71.063666}}
+    defaultZoom={13}
+    defaultCenter={{lat: 42.350668, lng: -71.077435}}
     defaultOptions={{
     	streetViewControl: false
     }}
