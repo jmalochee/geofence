@@ -6,8 +6,10 @@ import {
 	Marker 
 } from 'react-google-maps'
 import { compose, withProps } from 'recompose'
+// recompose used to follow design choices made by react-google-maps docs
 
 let url = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD_e5jJiT7Y1R-QuKR19E23MTCbjQixC84&v=3.exp&libraries=geometry,drawing";
+// assigned here because my editor's syntax highlighting is thrown off by "...//..." – it's the little things!
 
 const MyMap = compose(
   withProps({
