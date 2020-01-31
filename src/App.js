@@ -1,26 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MyMap from './components/MyMap';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
+
+  render() {
+    return (
+      <div className="app-container">
+        <div className="maps" id="map">
+          <MyMap
+            isMarkerShown={false}
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_e5jJiT7Y1R-QuKR19E23MTCbjQixC84&v=3.exp&libraries=geometry,drawing"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `600px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
