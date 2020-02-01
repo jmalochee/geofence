@@ -44,6 +44,9 @@ const MyMap = compose(
         onSearchBoxMounted: ref => {
           refs.searchBox = ref;
         },
+        onPlaceChanged: () => {
+          console.log("triggered");
+        },
         onPlacesChanged: () => {
           const places = refs.searchBox.getPlaces();
           const bounds = new google.maps.LatLngBounds();
@@ -79,7 +82,6 @@ const MyMap = compose(
     onBoundsChanged={props.onBoundsChanged}
     defaultOptions={{
     	streetViewControl: false,
-      mapTypeControl: true,
       mapTypeControl: true,
       mapTypeControlOptions: {
           style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
