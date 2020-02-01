@@ -64,7 +64,7 @@ const MyMap = compose(
             center: nextCenter,
             markers: nextMarkers,
           });
-          // refs.map.fitBounds(bounds);
+          refs.map.fitBounds(bounds);
         },
       })
     },
@@ -75,7 +75,7 @@ const MyMap = compose(
   <GoogleMap
     ref={props.onMapMounted}
     defaultZoom={13}
-    center={props.center}
+    defaultCenter={{lat: 42.350668, lng: -71.077435}}
     onBoundsChanged={props.onBoundsChanged}
     defaultOptions={{
     	streetViewControl: false,
