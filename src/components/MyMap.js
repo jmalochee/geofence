@@ -44,9 +44,6 @@ const MyMap = compose(
         onSearchBoxMounted: ref => {
           refs.searchBox = ref;
         },
-        onPlaceChanged: () => {
-          console.log("triggered");
-        },
         onPlacesChanged: () => {
           const places = refs.searchBox.getPlaces();
           const bounds = new google.maps.LatLngBounds();
@@ -78,7 +75,7 @@ const MyMap = compose(
   <GoogleMap
     ref={props.onMapMounted}
     defaultZoom={13}
-    defaultCenter={props.center}
+    center={props.center}
     onBoundsChanged={props.onBoundsChanged}
     defaultOptions={{
     	streetViewControl: false,
