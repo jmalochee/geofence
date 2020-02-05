@@ -14,8 +14,6 @@ You will also see any lint errors in the console.
 
 ### `yarn build`
 
-At the time of submission, I am encountering an unhandled fatal WebSocket security error on [Heroku](https://geofence-challenge.herokuapp.com).
-
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
