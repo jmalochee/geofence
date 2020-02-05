@@ -94,7 +94,7 @@ const MyMap = compose(
     >
       <input
         type="text"
-        placeholder="Customized your placeholder"
+        placeholder="Search..."
         style={{
           boxSizing: `border-box`,
           border: `1px solid transparent`,
